@@ -1,0 +1,7 @@
+{
+  "db": {
+    "url": "mongodb://shopifydb:ABC123@ds161804.mlab.com:61804/shopifystore",
+    "name": "db",
+    "connector": "loopback-connector-mongodb"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "product",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "productID": {
+      "type": "number",
+      "id": true,
+      "generated": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "inventory": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
